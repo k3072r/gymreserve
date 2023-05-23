@@ -1,0 +1,131 @@
+<html lang="ja">
+<head>
+  <link rel="stylesheet" type="text/css" id="csschange" href="prs_color1.css">
+  <link rel="stylesheet" type="text/css" href="prs_change.css">
+  <link rel="stylesheet" type="text/css" href="prs_web_common.css">
+  <script type="text/javascript" src="js/paw_doaction.js"></script>
+  <script type="text/javascript" src="js/paw_common.js"></script>
+  <script type="text/javascript" src="js/paw_errormsg.js"></script>
+  <script type="text/javascript" src="js/ajax/jquery.js"></script>
+  <script type="text/javascript" src="js/ajax/jquery.cookie.js"></script>
+  <script type="text/javascript">
+    var gRsvWTransGuideAction ='/sendai/eweb/rsvWTransGuideAction.do';var gRsvWInstApplyRsvMailAction ='/sendai/eweb/rsvC019WInstApplyRsvMailAction.do';var gRsvWInstApplyRsvMailNotAction ='/sendai/eweb/rsvWInstApplyRsvMailNotAction.do';
+  </script>
+  <!-- pawzz1000 -->
+  <meta http-equiv="Content-Type" content="text/html;charset=Shift_JIS">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="expires" content="Sun, 10 Jan 1990 01:01:01 GMT">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta name="format-detection" content="telephone=no">
+  <title>仙台市市民利用施設予約システム&nbsp;施設予約一覧画面</title>
+</head>
+<body class="nomargin" onload="javascript:msgHide();javascript:errorMsg('', 0);startInitTimer()">
+  <script type="text/javascript">
+    loadMsgWrite(this.document);
+  </script>
+  <div id="loadmsg" style="position: absolute; top: 0px; left: 0px; right: 0px; width: 100%; visibility: hidden;">
+    <center><br><br><br><br><br><br><br><br><br><br><img src="image/bi_nowloading.gif" alt="loading"></center>
+  </div>
+  <div id="disp" style="visibility: inherit;">
+    <center>
+      <form name="form1" method="post" action="dummy" autocomplete="off">
+        <table width="100%" class="head2" border="0">
+          <tbody>
+            <tr>
+              <td align="left">
+                <div class="dcontent"><strong>仙台市</strong>利用者東北大学バレーボールクラブ様<a href="#main"><img src="image/1px.gif" border="0" alt="本文へスキップ"></a></div>
+              </td>
+              <td align="right">
+                <script type="text/javascript" src="js/paw_fontsize.js"></script>
+                <script type="text/javascript">
+                  var gSmallSize = '90%';var gMiddleSize = '100%';var gLargeSize = '110%';
+                </script>
+                <div style="width:177px;">
+                  <ul id="fontChange" style="margin:0 0 0 0;padding:0">
+                    <li id="li-label1"><img src="image/lw_fontchange1.gif" id="label1" alt="文字サイズ変更"></li>
+                    <li id="small"><a href="javascript:void(0);" title="文字を小サイズに変更" style="margin:0 0 0 0;padding:0" class="afont">小</a></li>
+                    <li id="middle"><a href="javascript:void(0);" title="文字を中サイズに変更" style="margin:0 0 0 0;padding:0" class="afont">中</a></li>
+                    <li id="large"><a href="javascript:void(0);" title="文字を大サイズに変更" style="margin:0 0 0 0;padding:0" class="afont">大</a></li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td align="right" colspan="2"><a href="javascript:doAction((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransGuideAction);"><img src="image/bw_guide.gif" alt="案内" border="0"></a></td>
+            </tr>
+            <tr>
+              <td align="left" colspan="2">
+                <table border="0" class="head">
+                  <tbody>
+                    <tr>
+                      <td><img src="image/1px.gif" border="0" alt="ここからパンくずリスト">地域</td>
+                      <td>＞</td>
+                      <td>館</td>
+                      <td>＞</td>
+                      <td>施設</td>
+                      <td>＞</td>
+                      <td>一ヶ月検索結果</td>
+                      <td>＞</td>
+                      <td>一週間検索結果</td>
+                      <td>＞</td>
+                      <td>内容確認</td>
+                      <td>＞</td>
+                      <td><img src="image/1px.gif" border="0" alt="現在位置"><strong>予約完了</strong><img src="image/1px.gif" border="0" alt="パンくずリストここまで"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p align="left" class="pcontent"><a name="main"><img src="image/1px.gif" border="0" alt="ここから本文です"></a><br>予約が完了しました。予約番号を確認して下さい。<br>下記料金は目安の料金です。<br>　<br>仮予約の申込期限や本予約の使用料支払期限は予約一覧画面でご確認ください。</p><br><br><br>
+        <table class="tablelist">
+          <caption><strong>施設予約一覧</strong></caption>
+          <tbody>
+            <tr>
+              <th class="tablelist">予約番号</th>
+              <th class="tablelist">利用日</th>
+              <th class="tablelist">時間</th>
+              <th class="tablelist">館</th>
+              <th class="tablelist">施設</th>
+              <th class="tablelist">利用目的</th>
+              <th class="tablelist">利用人数</th>
+              <th class="tablelist">料金区分</th>
+              <th class="tablelist">利用料金</th>
+            </tr>
+            <tr>
+              <td align="center" class="tablelist" rowspan="3">2023029465</td>
+              <td align="center" class="tablelist" rowspan="3">2023年6月1日<br>木曜日</td>
+              <td align="center" class="tablelist" rowspan="3">19時00分～20時00分</td>
+              <td align="left" class="tablelist" rowspan="3">福室市民センター</td>
+              <td align="left" class="tablelist" rowspan="3">調理実習室</td>
+              <td align="left" class="tablelist" rowspan="3">調理</td>
+              <td align="right" class="tablelist" rowspan="3">2人</td>
+              <td align="center" class="tablelist">-</td>
+              <td align="right" class="tablelist" rowspan="3">465円</td>
+            </tr>
+            <tr>
+              <td align="center" class="tablelist">&nbsp;</td>
+            </tr>
+            <tr>
+              <td align="center" class="tablelist">-</td>
+            </tr>
+          </tbody>
+        </table><br>
+        <table border="0" width="60%" class="tcontent">
+          <tbody>
+            <tr>
+              <td>＜福室市民センター利用上の注意＞</td>
+            </tr>
+            <tr>
+              <td>【取消料について】<br>この申込を確定後に取消される場合は，取消する時期に応じて，下記のとおり取消料をいただきます。<br>使用日の7日前まで・・・取消料はかかりません<br>使用日の6日前から使用日まで・・・使用料の全額<br><br></td>
+            </tr>
+          </tbody>
+        </table><br><a href="javascript:doAction((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWInstApplyRsvMailNotAction);"><img src="image/bw_end.gif" alt="終了" border="0"></a><input type="hidden" name="displayNo" value="prwec1000"><input type="hidden" name="insRsvMailJKey" value="c1c7748c32b1b65d317359b34df29874d040a36c0f14f97b12a2d56d913a200b39d0f00d627d707e93420ffab8d53c0fc2a60b9ebe351475a29cb2187ca1d66c"></form>
+    </center>
+    <script type="text/javascript">
+      endTagWrite(this.document);
+    </script>
+  </div><noscript>このページではJavaScriptを使用しています。</noscript></body>
+</html>

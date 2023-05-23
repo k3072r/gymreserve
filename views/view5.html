@@ -1,0 +1,145 @@
+<html lang="ja">
+<head>
+  <link rel="stylesheet" type="text/css" id="csschange" href="prs_color1.css">
+  <link rel="stylesheet" type="text/css" href="prs_change.css">
+  <link rel="stylesheet" type="text/css" href="prs_web_common.css">
+  <script type="text/javascript" src="js/paw_doaction.js"></script>
+  <script type="text/javascript" src="js/paw_common.js"></script>
+  <script type="text/javascript" src="js/paw_errormsg.js"></script>
+  <script type="text/javascript" src="js/prwbb2000.js"></script>
+  <script type="text/javascript" src="js/ajax/jquery.js"></script>
+  <script type="text/javascript" src="js/ajax/jquery.cookie.js"></script>
+  <script type="text/javascript">
+    var gRsvWTransInstSrchAreaPageMoveAction ='/sendai/eweb/rsvWTransInstSrchAreaPageMoveAction.do';var gRsvWTransUserAttestationEndAction ='/sendai/eweb/rsvWTransUserAttestationEndAction.do';var gRsvWUserAttestationPageMoveAction ='/sendai/eweb/rsvWUserAttestationPageMoveAction.do';var gRsvWTransInstSrchPpsPageMoveAction ='/sendai/eweb/rsvWTransInstSrchPpsPageMoveAction.do';var gRsvWTransGuideAction ='/sendai/eweb/rsvWTransGuideAction.do';var gRsvWTransInstSrchMultipleAction ='/sendai/eweb/rsvWTransInstSrchMultipleAction.do';var gRsvWTransInstSrchInstAction ='/sendai/eweb/rsvWTransInstSrchInstAction.do';
+  </script>
+  <!-- pawzz1000 -->
+  <meta http-equiv="Content-Type" content="text/html;charset=Shift_JIS">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="expires" content="Sun, 10 Jan 1990 01:01:01 GMT">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta name="format-detection" content="telephone=no">
+  <title>仙台市市民利用施設予約システム&nbsp;館選択画面</title>
+</head>
+<body class="nomargin" onload="javascript:msgHide();javascript:errorMsg('', 0);startInitTimer()">
+  <script type="text/javascript">
+    loadMsgWrite(this.document);
+  </script>
+  <div id="loadmsg" style="position: absolute; top: 0px; left: 0px; right: 0px; width: 100%; visibility: hidden;">
+    <center><br><br><br><br><br><br><br><br><br><br><img src="image/bi_nowloading.gif" alt="loading"></center>
+  </div>
+  <div id="disp" style="visibility: inherit;">
+    <center>
+      <form name="form1" method="post" action="dummy" autocomplete="off">
+        <table width="100%" class="head2" border="0">
+          <tbody>
+            <tr>
+              <td align="left">
+                <div class="dcontent"><strong>仙台市</strong>利用者東北大学バレーボールクラブ様<a href="#main"><img src="image/1px.gif" border="0" alt="本文へスキップ"></a></div>
+              </td>
+              <td align="right">
+                <script type="text/javascript" src="js/paw_fontsize.js"></script>
+                <script type="text/javascript">
+                  var gSmallSize = '90%';var gMiddleSize = '100%';var gLargeSize = '110%';
+                </script>
+                <div style="width:177px;">
+                  <ul id="fontChange" style="margin:0 0 0 0;padding:0">
+                    <li id="li-label1"><img src="image/lw_fontchange1.gif" id="label1" alt="文字サイズ変更"></li>
+                    <li id="small"><a href="javascript:void(0);" title="文字を小サイズに変更" style="margin:0 0 0 0;padding:0" class="afont">小</a></li>
+                    <li id="middle"><a href="javascript:void(0);" title="文字を中サイズに変更" style="margin:0 0 0 0;padding:0" class="afont">中</a></li>
+                    <li id="large"><a href="javascript:void(0);" title="文字を大サイズに変更" style="margin:0 0 0 0;padding:0" class="afont">大</a></li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td align="right" colspan="2">
+                <table border="0">
+                  <tbody>
+                    <tr>
+                      <td><a href="javascript:doAction((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWUserAttestationPageMoveAction);"><img src="image/bw_menu.gif" alt="メニューへ" border="0"></a></td>
+                      <td><a href="javascript:doAction((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchAreaPageMoveAction);"><img src="image/bw_return.gif" alt="もどる" border="0"></a></td>
+                      <td><a href="javascript:doAction((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransUserAttestationEndAction);"><img src="image/bw_end.gif" alt="終了" border="0"></a></td>
+                      <td><a href="javascript:doAction((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransGuideAction);"><img src="image/bw_guide.gif" alt="案内" border="0"></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" colspan="2">
+                <table border="0" class="head">
+                  <tbody>
+                    <tr>
+                      <td><img src="image/1px.gif" border="0" alt="ここからパンくずリスト">地域</td>
+                      <td>＞</td>
+                      <td><img src="image/1px.gif" border="0" alt="現在位置"><strong>館</strong></td>
+                      <td>＞</td>
+                      <td>施設</td>
+                      <td>＞</td>
+                      <td>一ヶ月検索結果</td>
+                      <td>＞</td>
+                      <td>一週間検索結果</td>
+                      <td>＞</td>
+                      <td>内容確認</td>
+                      <td>＞</td>
+                      <td>予約完了<img src="image/1px.gif" border="0" alt="パンくずリストここまで"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p align="left" class="pcontent"><a name="main"><img src="image/1px.gif" border="0" alt="ここから本文です"></a><br>館を選択して下さい。</p><br><br>
+        <center><img src="image/lw_bld1.gif" alt="館一覧"></center><br>
+        <table cellpadding="15" border="0" class="tcontent">
+          <tbody>
+            <tr>
+              <td align="left"><a href="javascript:sendBldCd((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchInstAction, '0')"><img src="image/bw_buildingimg.gif" border="0" alt="">すべて</a></td>
+              <td align="left"><a href="javascript:sendBldCd((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchInstAction, '327100')"><img src="image/bw_buildingimg.gif" border="0" alt="">宮城野区文化センター</a></td>
+              <td align="left"><a href="javascript:sendBldCd((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchInstAction, '421100')"><img src="image/bw_buildingimg.gif" border="0" alt="">生涯学習支援センター（旧：中央</a></td>
+            </tr>
+            <tr>
+              <td align="left"><a href="javascript:sendBldCd((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchInstAction, '421500')"><img src="image/bw_buildingimg.gif" border="0" alt="">宮城野区中央市民センター</a></td>
+              <td align="left"><a href="javascript:sendBldCd((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchInstAction, '422200')"><img src="image/bw_buildingimg.gif" border="0" alt="">高砂市民センター</a></td>
+              <td align="left"><a href="javascript:sendBldCd((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchInstAction, '422300')"><img src="image/bw_buildingimg.gif" border="0" alt="">岩切市民センター</a></td>
+            </tr>
+            <tr>
+              <td align="left"><a href="javascript:sendBldCd((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchInstAction, '422400')"><img src="image/bw_buildingimg.gif" border="0" alt="">鶴ケ谷市民センター</a></td>
+              <td align="left"><a href="javascript:sendBldCd((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchInstAction, '422600')"><img src="image/bw_buildingimg.gif" border="0" alt="">榴ケ岡市民センター</a></td>
+              <td align="left"><a href="javascript:sendBldCd((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchInstAction, '422700')"><img src="image/bw_buildingimg.gif" border="0" alt="">東部市民センター</a></td>
+            </tr>
+            <tr>
+              <td align="left"><a href="javascript:sendBldCd((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchInstAction, '422800')"><img src="image/bw_buildingimg.gif" border="0" alt="">幸町市民センター</a></td>
+              <td align="left"><a href="javascript:sendBldCd((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchInstAction, '422900')"><img src="image/bw_buildingimg.gif" border="0" alt="">田子市民センター</a></td>
+              <td align="left"><a href="javascript:sendBldCd((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchInstAction, '423000')"><img src="image/bw_buildingimg.gif" border="0" alt="">福室市民センター</a></td>
+            </tr>
+            <tr>
+              <td align="left"><a href="javascript:sendBldCd((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchInstAction, '621100')"><img src="image/bw_buildingimg.gif" border="0" alt="">高砂庭球場</a></td>
+              <td align="left"><a href="javascript:sendBldCd((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchInstAction, '622100')"><img src="image/bw_buildingimg.gif" border="0" alt="">海岸公園庭球場</a></td>
+              <td align="left"><a href="javascript:sendBldCd((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchInstAction, '721100')"><img src="image/bw_buildingimg.gif" border="0" alt="">新田東総合運動場仙台市民球場</a></td>
+            </tr>
+            <tr>
+              <td align="left"><a href="javascript:sendBldCd((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchInstAction, '722100')"><img src="image/bw_buildingimg.gif" border="0" alt="">扇町一丁目公園野球場</a></td>
+              <td align="left"><a href="javascript:sendBldCd((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchInstAction, '722200')"><img src="image/bw_buildingimg.gif" border="0" alt="">日の出町公園野球場</a></td>
+              <td align="left"><a href="javascript:sendBldCd((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchInstAction, '722300')"><img src="image/bw_buildingimg.gif" border="0" alt="">海岸公園野球場</a></td>
+            </tr>
+            <tr>
+              <td align="left"><a href="javascript:sendBldCd((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchInstAction, '821100')"><img src="image/bw_buildingimg.gif" border="0" alt="">仙台市陸上競技場</a></td>
+              <td align="left"><a href="javascript:sendBldCd((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchInstAction, '821300')"><img src="image/bw_buildingimg.gif" border="0" alt="">新田東総合運動場アーチェリー場</a></td>
+              <td align="left"><a href="javascript:sendBldCd((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchInstAction, '821400')"><img src="image/bw_buildingimg.gif" border="0" alt="">新田東総合運動場ボルダリング室</a></td>
+            </tr>
+            <tr>
+              <td align="left"><a href="javascript:sendBldCd((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchInstAction, '822100')"><img src="image/bw_buildingimg.gif" border="0" alt="">扇町四丁目公園運動広場</a></td>
+              <td align="left"><a href="javascript:sendBldCd((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchInstAction, '921100')"><img src="image/bw_buildingimg.gif" border="0" alt="">新田東総合運動場宮城野体育館</a></td>
+              <td align="left"><a href="javascript:sendBldCd((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchInstAction, '921200')"><img src="image/bw_buildingimg.gif" border="0" alt="">出花体育館</a></td>
+            </tr>
+          </tbody>
+        </table><input type="hidden" name="displayNo" value="prwbb2000"><input type="hidden" name="selectAreaCd" value="1002"><input type="hidden" name="selectBldCd" value=""><input type="hidden" name="selectPpsdCd" value="0"><input type="hidden" name="selectPpsCd" value="0"><input type="hidden" name="selectPpsPpsdCd" value="0"><input type="hidden" name="selectInstNo" value="0"><input type="hidden" name="dispWeekNum" value="0"><input type="hidden" name="dispWeek" value="0"><input type="hidden" name="dispWeek" value="0"><input type="hidden" name="dispWeek" value="0"><input type="hidden" name="dispWeek" value="0"><input type="hidden" name="dispWeek" value="0"><input type="hidden" name="dispWeek" value="0"><input type="hidden" name="dispWeek" value="0"><input type="hidden" name="dispWeek" value="0"><input type="hidden" name="submmitMode" value="0"><input type="hidden" name="transVacantMode" value="0"><input type="hidden" name="conditionMode" value="1"><input type="hidden" name="dispSelectInstBldCd" value=""><input type="hidden" name="dispSelectInstCd" value=""><input type="hidden" name="selectCommunityManageCd" value="0"><input type="hidden" name="selectCommunityPlaceCd" value="0"></form>
+    </center>
+    <script type="text/javascript">
+      endTagWrite(this.document);
+    </script>
+  </div><noscript>このページではJavaScriptを使用しています。</noscript></body>
+</html>

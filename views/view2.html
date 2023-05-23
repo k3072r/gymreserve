@@ -1,0 +1,122 @@
+<html lang="ja">
+<head>
+  <link rel="stylesheet" type="text/css" id="csschange" href="prs_color1.css">
+  <link rel="stylesheet" type="text/css" href="prs_change.css">
+  <link rel="stylesheet" type="text/css" href="prs_web_common.css">
+  <script type="text/javascript" src="js/paw_doaction.js"></script>
+  <script type="text/javascript" src="js/paw_common.js"></script>
+  <script type="text/javascript" src="js/paw_errormsg.js"></script>
+  <script type="text/javascript" src="js/pawac2000.js"></script>
+  <script type="text/javascript" src="js/ajax/jquery.js"></script>
+  <script type="text/javascript" src="js/ajax/jquery.cookie.js"></script>
+  <script type="text/javascript">
+    var gRsvWTransUserAttestationBackAction ='/sendai/eweb/rsvWTransUserAttestationBackAction.do';var gRsvWTransUserAttestationEndAction ='/sendai/eweb/rsvWTransUserAttestationEndAction.do';var WTransGuideAction ='/sendai/eweb/rsvWTransGuideAction.do';var gRsvWTransInstSrchVacantAction ='/sendai/eweb/rsvWTransInstSrchVacantAction.do';var gRsvWGetCancelRsvDataAction ='/sendai/eweb/rsvC019WGetCancelRsvDataAction.do';var gRsvWGetConfirmRsvDataAction ='/sendai/eweb/rsvC019WGetConfirmRsvDataAction.do';var gRsvWTransRsvEquipListAction ='/sendai/eweb/rsvWTransRsvEquipListAction.do';var gRsvWTransEventSrchAction ='/sendai/eweb/rsvWTransEventSrchAction.do';var gLotWSetupLotAcceptAction ='/sendai/eweb/lotWSetupLotAcceptAction.do';var gLotWTransLotCancelListAction ='/sendai/eweb/lotC019WTransLotCancelListAction.do';var gLotWTransLotElectListAction ='/sendai/eweb/lotC019WTransLotElectListAction.do';var gLotWTransCompleteLotListAction ='/sendai/eweb/lotC019WTransCompleteLotListAction.do';var gRsvWTransUserSetupAction ='/sendai/eweb/rsvWTransUserSetupAction.do';var gRsvWGetFoundTransAction ='/sendai/eweb/rsvWGetFoundTransAction.do';
+  </script>
+  <!-- pawzz1000 -->
+  <meta http-equiv="Content-Type" content="text/html;charset=Shift_JIS">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="expires" content="Sun, 10 Jan 1990 01:01:01 GMT">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta name="format-detection" content="telephone=no">
+  <title>仙台市市民利用施設予約システム&nbsp;登録メニュー画面</title>
+</head>
+<body class="nomargin" onload="javascript:msgHide();javascript:errorMsg('', 0);startInitTimer()">
+  <script type="text/javascript">
+    loadMsgWrite(this.document);
+  </script>
+  <div id="loadmsg" style="position: absolute; top: 0px; left: 0px; right: 0px; width: 100%; visibility: hidden;">
+    <center><br><br><br><br><br><br><br><br><br><br><img src="image/bi_nowloading.gif" alt="loading"></center>
+  </div>
+  <div id="disp" style="visibility: inherit;">
+    <center>
+      <form name="form1" method="post" action="dummy" autocomplete="off">
+        <table width="100%" class="head" border="0">
+          <tbody>
+            <tr>
+              <td align="left"><strong>仙台市</strong>利用者東北大学バレーボールクラブ様<a href="#main"><img src="image/1px.gif" border="0" alt="本文へスキップ"></a></td>
+              <td align="right">
+                <script type="text/javascript" src="js/paw_fontsize.js"></script>
+                <script type="text/javascript">
+                  var gSmallSize = '90%';var gMiddleSize = '100%';var gLargeSize = '110%';
+                </script>
+                <div style="width:177px;">
+                  <ul id="fontChange" style="margin:0 0 0 0;padding:0">
+                    <li id="li-label1"><img src="image/lw_fontchange1.gif" id="label1" alt="文字サイズ変更"></li>
+                    <li id="small"><a href="javascript:void(0);" title="文字を小サイズに変更" style="margin:0 0 0 0;padding:0" class="afont">小</a></li>
+                    <li id="middle"><a href="javascript:void(0);" title="文字を中サイズに変更" style="margin:0 0 0 0;padding:0" class="afont">中</a></li>
+                    <li id="large"><a href="javascript:void(0);" title="文字を大サイズに変更" style="margin:0 0 0 0;padding:0" class="afont">大</a></li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td align="right" colspan="2">
+                <table border="0">
+                  <tbody>
+                    <tr>
+                      <td><a href="javascript:doAction(((_dom == 3) ? document.layers['disp'].document.form1 : document.form1 ), gRsvWTransUserAttestationEndAction);"><img src="image/bw_end.gif" alt="終了" border="0"></a></td>
+                      <td><a href="javascript:doAction(((_dom == 3) ? document.layers['disp'].document.form1 : document.form1 ), WTransGuideAction);"><img src="image/bw_guide.gif" alt="案内" border="0"></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p align="left" class="pcontent"><a name="main"><img src="image/1px.gif" border="0" alt="ここから本文です"></a><br>ご希望の処理をボタンで選択して下さい。予約や抽選の申込みは利用者登録されている方のみご利用できます。</p>
+        <center><img src="image/lw_registuser.gif" alt="登録されている方の専用メニュー"></center>
+        <table border="0" cellpadding="15">
+          <tbody>
+            <tr>
+              <td valign="top">
+                <table border="0" cellpadding="15">
+                  <tbody>
+                    <tr>
+                      <td><a href="javascript:doAction(((_dom == 3) ? document.layers['disp'].document.form1 : document.form1 ), gRsvWTransInstSrchVacantAction);"><img src="image/bw_rsvapply.gif" alt="予約の申込み" border="0"></a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="javascript:doAction(((_dom == 3) ? document.layers['disp'].document.form1 : document.form1 ), gRsvWGetCancelRsvDataAction);"><img src="image/bw_rsvcancel.gif" alt="予約の取消" border="0"></a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="javascript:doAction(((_dom == 3) ? document.layers['disp'].document.form1 : document.form1 ), gRsvWGetConfirmRsvDataAction);"><img src="image/bw_rsvconfirmed.gif" alt="予約の確認" border="0"></a></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><a href="javascript:doAction(((_dom == 3) ? document.layers['disp'].document.form1 : document.form1 ), gRsvWTransEventSrchAction);"><img src="image/bw_eventsrch.gif" alt="イベントの検索" border="0"></a></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><a href="javascript:doAction(((_dom == 3) ? document.layers['disp'].document.form1 : document.form1 ), gRsvWGetFoundTransAction);"><img src="image/bw_fundtransfer.gif" alt="口座振替結果の確認" border="0"></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td valign="top">
+                <table border="0" cellpadding="15">
+                  <tbody>
+                    <tr>
+                      <td><a href="javascript:doAction(((_dom == 3) ? document.layers['disp'].document.form1 : document.form1 ), gLotWSetupLotAcceptAction);"><img src="image/bw_lotteyapply.gif" alt="抽選の申込み" border="0"></a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="javascript:doAction(((_dom == 3) ? document.layers['disp'].document.form1 : document.form1 ), gLotWTransLotCancelListAction);"><img src="image/bw_lotteyapplycancel.gif" alt="抽選申込みの取消" border="0"></a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="javascript:doAction(((_dom == 3) ? document.layers['disp'].document.form1 : document.form1 ), gLotWTransCompleteLotListAction);"><img src="image/bw_lotreceived.gif" alt="抽選申込みの確認" border="0"></a></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><a href="javascript:doAction(((_dom == 3) ? document.layers['disp'].document.form1 : document.form1 ), gLotWTransLotElectListAction);"><img src="image/bw_confirmed.gif" alt="抽選結果の確認" border="0"></a></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><a href="javascript:doAction(((_dom == 3) ? document.layers['disp'].document.form1 : document.form1 ), gRsvWTransUserSetupAction);"><img src="image/bw_favoriteset.gif" alt="利用者個別設定" border="0"></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table><input type="hidden" name="displayNo" value="pawac2000"><input type="hidden" name="procType" value="0"></form>
+    </center>
+    <script type="text/javascript">
+      endTagWrite(this.document);
+    </script>
+  </div><noscript>このページではJavaScriptを使用しています。</noscript></body>
+</html>

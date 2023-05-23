@@ -1,0 +1,91 @@
+<html lang="ja">
+<head>
+  <link rel="stylesheet" type="text/css" id="csschange" href="prs_color1.css">
+  <link rel="stylesheet" type="text/css" href="prs_change.css">
+  <link rel="stylesheet" type="text/css" href="prs_web_common.css">
+  <script type="text/javascript" src="js/paw_doaction.js"></script>
+  <script type="text/javascript" src="js/paw_errormsg.js"></script>
+  <script type="text/javascript" src="js/paw_common.js"></script>
+  <script type="text/javascript" src="js/prwaa1000.js"></script>
+  <script type="text/javascript" src="js/ajax/jquery.js"></script>
+  <script type="text/javascript" src="js/ajax/jquery.cookie.js"></script>
+  <script type="text/javascript">
+    var gRsvWTransUserAttestationEndAction ='/sendai/eweb/rsvWTransUserAttestationEndAction.do';var gRsvWTransInstSrchVacantPageMoveAction ='/sendai/eweb/rsvWTransInstSrchVacantPageMoveAction.do';var gRsvWTransGuideAction ='/sendai/eweb/rsvWTransGuideAction.do';var gRsvWTransInstSrchFavoriteAction ='/sendai/eweb/rsvWTransInstSrchFavoriteAction.do';var gRsvWTransInstSrchAreaAction ='/sendai/eweb/rsvWTransInstSrchAreaAction.do';var gRsvWTransInstSrchAreaMapAction ='/sendai/eweb/rsvWTransInstSrchAreaMapAction.do';var gRsvWTransInstSrchPpsdAction ='/sendai/eweb/rsvWTransInstSrchPpsdAction.do';var gRsvWTransInstSrchMultipleAction ='/sendai/eweb/rsvWTransInstSrchMultipleAction.do';
+  </script>
+  <!-- pawzz1000 -->
+  <meta http-equiv="Content-Type" content="text/html;charset=Shift_JIS">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="expires" content="Sun, 10 Jan 1990 01:01:01 GMT">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta name="format-detection" content="telephone=no">
+  <title>仙台市市民利用施設予約システム&nbsp;予約申込画面</title>
+</head>
+<body class="nomargin" onload="javascript:msgHide();javascript:errorMsg('', 0);startInitTimer()">
+  <script type="text/javascript">
+    loadMsgWrite(this.document);
+  </script>
+  <div id="loadmsg" style="position: absolute; top: 0px; left: 0px; right: 0px; width: 100%; visibility: hidden;">
+    <center><br><br><br><br><br><br><br><br><br><br><img src="image/bi_nowloading.gif" alt="loading"></center>
+  </div>
+  <div id="disp" style="visibility: inherit;">
+    <center>
+      <form name="form1" method="post" action="dummy" autocomplete="off">
+        <table width="100%" class="head" border="0">
+          <tbody>
+            <tr>
+              <td align="left"><strong>仙台市</strong>利用者東北大学バレーボールクラブ様<a href="#main"><img src="image/1px.gif" border="0" alt="本文へスキップ"></a></td>
+              <td align="right">
+                <script type="text/javascript" src="js/paw_fontsize.js"></script>
+                <script type="text/javascript">
+                  var gSmallSize = '90%';var gMiddleSize = '100%';var gLargeSize = '110%';
+                </script>
+                <div style="width:177px;">
+                  <ul id="fontChange" style="margin:0 0 0 0;padding:0">
+                    <li id="li-label1"><img src="image/lw_fontchange1.gif" id="label1" alt="文字サイズ変更"></li>
+                    <li id="small"><a href="javascript:void(0);" title="文字を小サイズに変更" style="margin:0 0 0 0;padding:0" class="afont">小</a></li>
+                    <li id="middle"><a href="javascript:void(0);" title="文字を中サイズに変更" style="margin:0 0 0 0;padding:0" class="afont">中</a></li>
+                    <li id="large"><a href="javascript:void(0);" title="文字を大サイズに変更" style="margin:0 0 0 0;padding:0" class="afont">大</a></li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td align="right" colspan="2">
+                <table border="0">
+                  <tbody>
+                    <tr>
+                      <td><a href="javascript:doAction((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchVacantPageMoveAction);"><img src="image/bw_return.gif" alt="もどる" border="0"></a></td>
+                      <td><a href="javascript:doAction((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransUserAttestationEndAction);"><img src="image/bw_end.gif" alt="終了" border="0"></a></td>
+                      <td><a href="javascript:doAction((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransGuideAction);"><img src="image/bw_guide.gif" alt="案内" border="0"></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p align="left" class="pcontent"><a name="main"><img src="image/1px.gif" border="0" alt="ここから本文です"></a><br>施設の空き状況を検索します。</p>
+        <div class="dcontent" style="text-align:center;"><strong>施設の空き状況を検索する条件を指定してください。</strong></div>
+        <table cellpadding="5" border="0">
+          <tbody>
+            <tr>
+              <td><a href="javascript:doAction((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchFavoriteAction);"><img src="image/bw_favoritetermsrch.gif" alt="お気に入り条件で空きを検索する" border="0"></a></td>
+            </tr>
+            <tr>
+              <td><a href="javascript:doAreaAction((_dom == 3) ? document.layers['disp'].document.form1 : document.form1 , gRsvWTransInstSrchAreaAction);"><img src="image/bw_akisituationarea.gif" alt="地域から" border="0"></a></td>
+            </tr>
+            <tr>
+              <td><a href="javascript:doPpsdSearchAction((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchPpsdAction);"><img src="image/bw_fromusepurpose.gif" alt="利用目的から" border="0"></a></td>
+            </tr>
+            <tr>
+              <td><a href="javascript:doComplexSearchAction((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchMultipleAction);"><img src="image/bw_complexsrch.gif" alt="複合検索条件" border="0"></a></td>
+            </tr>
+          </tbody>
+        </table><input type="hidden" name="displayNo" value="prwaa1000"><input type="hidden" name="selectAreaCd" value=""><input type="hidden" name="selectBldCd" value=""><input type="hidden" name="selectPpsdCd" value="0"><input type="hidden" name="selectPpsCd" value="0"><input type="hidden" name="selectPpsPpsdCd" value="0"><input type="hidden" name="selectInstNo" value="0"><input type="hidden" name="dispWeekNum" value="0"><input type="hidden" name="dispWeek" value="0"><input type="hidden" name="dispWeek" value="0"><input type="hidden" name="dispWeek" value="0"><input type="hidden" name="dispWeek" value="0"><input type="hidden" name="dispWeek" value="0"><input type="hidden" name="dispWeek" value="0"><input type="hidden" name="dispWeek" value="0"><input type="hidden" name="dispWeek" value="0"><input type="hidden" name="submmitMode" value="0"><input type="hidden" name="conditionMode" value="0"><input type="hidden" name="transVacantMode" value="0"><input type="hidden" name="dispSelectInstBldCd" value=""><input type="hidden" name="dispSelectInstCd" value=""><input type="hidden" name="selectCommunityManageCd" value=""><input type="hidden" name="selectCommunityPlaceCd" value=""></form>
+    </center>
+    <script type="text/javascript">
+      endTagWrite(this.document);
+    </script>
+  </div><noscript>このページではJavaScriptを使用しています。</noscript></body>
+</html>

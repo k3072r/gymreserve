@@ -1,0 +1,226 @@
+<html lang="ja">
+<head>
+  <link rel="stylesheet" type="text/css" id="csschange" href="prs_color1.css">
+  <link rel="stylesheet" type="text/css" href="prs_change.css">
+  <link rel="stylesheet" type="text/css" href="prs_web_common.css">
+  <script type="text/javascript" src="js/paw_doaction.js"></script>
+  <script type="text/javascript" src="js/paw_common.js"></script>
+  <script type="text/javascript" src="js/paw_errormsg.js"></script>
+  <script type="text/javascript" src="js/prwca1000.js"></script>
+  <script type="text/javascript" src="js/ajax/jquery.js"></script>
+  <script type="text/javascript" src="js/ajax/jquery.cookie.js"></script>
+  <script type="text/javascript">
+    var gRsvWInstSrchVacantSelectionAction ='/sendai/eweb/rsvWInstSrchVacantSelectionAction.do';var gRsvWInstRsvFieldAction ='/sendai/eweb/rsvWInstRsvFieldAction.do';var gRsvWTransInstSrchVacantAction ='/sendai/eweb/rsvWInstSrchVacantAction.do';var gRsvWInstTempRsvApplyAction ='/sendai/eweb/rsvC019WInstTempRsvApplyAction.do';var gRsvWUserAttestationPageMoveAction ='/sendai/eweb/rsvWUserAttestationPageMoveAction.do';var gRsvWTransGuideAction ='/sendai/eweb/rsvWTransGuideAction.do';var gRsvWInstSrchVacantBackAction ='/sendai/eweb/rsvWInstSrchVacantBackAction.do';var gRsvWTransUserAttestationEndAction ='/sendai/eweb/rsvWTransUserAttestationEndAction.do';var gRsvWInstSrchVacantStopApplyAction ='/sendai/eweb/rsvWInstSrchVacantStopApplyAction.do';var gRsvWEquipSrchVacantAction ='/sendai/eweb/rsvWEquipSrchVacantAction.do';var gRsvWTransUserLoginAction ='/sendai/eweb/rsvWTransUserLoginAction.do';var gSrchSelectInstNo = 0;var gSrchSelectInstMax = 5;function selectDisp() {}
+  </script>
+  <!-- pawzz1000 -->
+  <meta http-equiv="Content-Type" content="text/html;charset=Shift_JIS">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="expires" content="Sun, 10 Jan 1990 01:01:01 GMT">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta name="format-detection" content="telephone=no">
+  <title>仙台市市民利用施設予約システム&nbsp;施設空き状況画面時間帯貸し</title>
+</head>
+<body class="nomargin" onload="javascript:msgHide();javascript:errorMsg('', 0);startInitTimer();selectDisp()">
+  <script type="text/javascript">
+    loadMsgWrite(this.document);
+  </script>
+  <div id="loadmsg" style="position: absolute; top: 0px; left: 0px; right: 0px; width: 100%; visibility: hidden;">
+    <center><br><br><br><br><br><br><br><br><br><br><img src="image/bi_nowloading.gif" alt="loading"></center>
+  </div>
+  <div id="disp" style="visibility: inherit;">
+    <center>
+      <form name="form1" method="post" action="dummy" autocomplete="off">
+        <table width="100%" class="head2" border="0">
+          <tbody>
+            <tr>
+              <td align="left">
+                <div class="dcontent"><strong>仙台市</strong>利用者東北大学バレーボールクラブ様<a href="#main"><img src="image/1px.gif" border="0" alt="本文へスキップ"></a><a href="#main2"><img src="image/1px.gif" border="0" alt="空き状況の表へスキップ"></a></div>
+              </td>
+              <td align="right">
+                <script type="text/javascript" src="js/paw_fontsize.js"></script>
+                <script type="text/javascript">
+                  var gSmallSize = '90%';var gMiddleSize = '100%';var gLargeSize = '110%';
+                </script>
+                <div style="width:177px;">
+                  <ul id="fontChange" style="margin:0 0 0 0;padding:0">
+                    <li id="li-label1"><img src="image/lw_fontchange1.gif" id="label1" alt="文字サイズ変更"></li>
+                    <li id="small"><a href="javascript:void(0);" title="文字を小サイズに変更" style="margin:0 0 0 0;padding:0" class="afont">小</a></li>
+                    <li id="middle"><a href="javascript:void(0);" title="文字を中サイズに変更" style="margin:0 0 0 0;padding:0" class="afont">中</a></li>
+                    <li id="large"><a href="javascript:void(0);" title="文字を大サイズに変更" style="margin:0 0 0 0;padding:0" class="afont">大</a></li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td align="right" colspan="2">
+                <table border="0">
+                  <tbody>
+                    <tr>
+                      <td><a href="javascript:doAction((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWUserAttestationPageMoveAction);"><img src="image/bw_menu.gif" alt="メニューへ" border="0"></a></td>
+                      <td><a href="javascript:doAction((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWInstSrchVacantBackAction);"><img src="image/bw_return.gif" alt="もどる" border="0"></a></td>
+                      <td><a href="javascript:doAction((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransUserAttestationEndAction);"><img src="image/bw_end.gif" alt="終了" border="0"></a></td>
+                      <td><a href="javascript:doAction((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransGuideAction);"><img src="image/bw_guide.gif" alt="案内" border="0"></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" colspan="2">
+                <table border="0" class="head">
+                  <tbody>
+                    <tr>
+                      <td><img src="image/1px.gif" border="0" alt="ここからパンくずリスト">地域</td>
+                      <td>＞</td>
+                      <td>館</td>
+                      <td>＞</td>
+                      <td>施設</td>
+                      <td>＞</td>
+                      <td>一ヶ月検索結果</td>
+                      <td>＞</td>
+                      <td><img src="image/1px.gif" border="0" alt="現在位置"><strong>一週間検索結果</strong></td>
+                      <td>＞</td>
+                      <td>内容確認</td>
+                      <td>＞</td>
+                      <td>予約完了<img src="image/1px.gif" border="0" alt="パンくずリストここまで"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p align="left" class="pcontent"><a name="main"><img src="image/1px.gif" border="0" alt="ここから本文です"></a><br>予約の申込みができます。<br>予約を申込むには、空き<img src="image/lw_0.gif" align="middle" alt="">をクリックして、選択中<img src="image/lw_starl.gif" align="middle" alt="">にしたあと、「申込み」ボタンを押します。</p>
+        <table border="0">
+          <tbody>
+            <tr>
+              <td>&nbsp;</td>
+              <td nowrap="" align="left">&nbsp;</td>
+              <td align="right">
+                <table cellspacing="5" cellpadding="0" align="center" border="0" class="tcontent">
+                  <tbody>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td><img src="image/bw_previnvalidinstitutionl.gif" alt=""></td>
+                      <td><a href="javascript:doTransInstSrchVacantTzoneAction((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchVacantAction, 6, gSrchSelectInstNo, gSrchSelectInstMax);"><img src="image/bw_nextinstitutionl.gif" alt="次の施設" border="0"></a></td>
+                      <td>生出市民センター<br>第１講義室</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td valign="bottom">&nbsp;</td>
+            </tr>
+            <tr>
+              <td valign="top" nowrap="" align="left"><a name="main2"><img src="image/1px.gif" border="0" alt="ここから空き状況の表です"></a></td>
+              <td valign="top" colspan="3" align="left">
+                <table border="0">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <table class="akitablelist">
+                          <caption><a href="http://www.hm-sendai.jp/siminc/sisetu/taihaku02.html" target="new_window">生出市民センター</a>体育館&nbsp;空き状況</caption>
+                          <tbody>
+                            <tr>
+                              <th class="akitablelist">2023年</th>
+                              <th class="akitablelist">6月25日<br>日曜日</th>
+                              <th class="akitablelist">6月26日<br>月曜日</th>
+                              <th class="akitablelist">6月27日<br>火曜日</th>
+                              <th class="akitablelist">6月28日<br>水曜日</th>
+                              <th class="akitablelist">6月29日<br>木曜日</th>
+                              <th class="akitablelist">6月30日<br>金曜日</th>
+                              <th class="akitablelist">7月1日<br>土曜日</th>
+                            </tr>
+                            <tr>
+                              <th class="akitablelist2">午前<a name="0"></a></th>
+                              <td width="78" nowrap="" class="akitablelist" align="center"><img src="image/lw_kikangais.gif" name="0_0" border="0" alt="予約不可"></td>
+                              <td width="78" nowrap="" class="akitablelist" align="center"><img src="image/lw_aki2.gif" name="0_1" border="0" alt="休館日"></td>
+                              <td width="78" nowrap="" class="akitablelist" align="center"><img src="image/lw_kikangais.gif" name="0_2" border="0" alt="予約不可"></td>
+                              <td width="78" nowrap="" class="akitablelist" align="center"><a href="javascript:doInstSrchVacantSelectionAction('0','0_3', (_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWInstSrchVacantSelectionAction);"><img src="image/lw_emptybs.gif" name="0_3" border="0" alt="予約可"></a></td>
+                              <td width="78" nowrap="" class="akitablelist" align="center"><a href="javascript:doInstSrchVacantSelectionAction('0','0_4', (_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWInstSrchVacantSelectionAction);"><img src="image/lw_emptybs.gif" name="0_4" border="0" alt="予約可"></a></td>
+                              <td width="78" nowrap="" class="akitablelist" align="center"><img src="image/lw_kikangais.gif" name="0_5" border="0" alt="予約不可"></td>
+                              <td width="78" nowrap="" class="akitablelist" align="center"><img src="image/lw_kikangais.gif" name="0_6" border="0" alt="予約不可"></td>
+                            </tr>
+                            <tr>
+                              <th class="akitablelist2">午後<a name="1"></a></th>
+                              <td width="78" nowrap="" class="akitablelist" align="center"><a href="javascript:doInstSrchVacantSelectionAction('1','1_0', (_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWInstSrchVacantSelectionAction);"><img src="image/lw_emptybs.gif" name="1_0" border="0" alt="予約可"></a></td>
+                              <td width="78" nowrap="" class="akitablelist" align="center"><img src="image/lw_aki2.gif" name="1_1" border="0" alt="休館日"></td>
+                              <td width="78" nowrap="" class="akitablelist" align="center"><img src="image/lw_kikangais.gif" name="1_2" border="0" alt="予約不可"></td>
+                              <td width="78" nowrap="" class="akitablelist" align="center"><a href="javascript:doInstSrchVacantSelectionAction('1','1_3', (_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWInstSrchVacantSelectionAction);"><img src="image/lw_emptybs.gif" name="1_3" border="0" alt="予約可"></a></td>
+                              <td width="78" nowrap="" class="akitablelist" align="center"><a href="javascript:doInstSrchVacantSelectionAction('1','1_4', (_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWInstSrchVacantSelectionAction);"><img src="image/lw_emptybs.gif" name="1_4" border="0" alt="予約可"></a></td>
+                              <td width="78" nowrap="" class="akitablelist" align="center"><a href="javascript:doInstSrchVacantSelectionAction('1','1_5', (_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWInstSrchVacantSelectionAction);"><img src="image/lw_emptybs.gif" name="1_5" border="0" alt="予約可"></a></td>
+                              <td width="78" nowrap="" class="akitablelist" align="center"><img src="image/lw_kikangais.gif" name="1_6" border="0" alt="予約不可"></td>
+                            </tr>
+                            <tr>
+                              <th class="akitablelist2">夜間<a name="2"></a></th>
+                              <td width="78" nowrap="" class="akitablelist" align="center"><a href="javascript:doInstSrchVacantSelectionAction('2','2_0', (_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWInstSrchVacantSelectionAction);"><img src="image/lw_emptybs.gif" name="2_0" border="0" alt="予約可"></a></td>
+                              <td width="78" nowrap="" class="akitablelist" align="center"><img src="image/lw_aki2.gif" name="2_1" border="0" alt="休館日"></td>
+                              <td width="78" nowrap="" class="akitablelist" align="center"><img src="image/lw_kikangais.gif" name="2_2" border="0" alt="予約不可"></td>
+                              <td width="78" nowrap="" class="akitablelist" align="center"><a href="javascript:doInstSrchVacantSelectionAction('2','2_3', (_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWInstSrchVacantSelectionAction);"><img src="image/lw_emptybs.gif" name="2_3" border="0" alt="予約可"></a></td>
+                              <td width="78" nowrap="" class="akitablelist" align="center"><img src="image/lw_kikangais.gif" name="2_4" border="0" alt="予約不可"></td>
+                              <td width="78" nowrap="" class="akitablelist" align="center"><img src="image/lw_kikangais.gif" name="2_5" border="0" alt="予約不可"></td>
+                              <td width="78" nowrap="" class="akitablelist" align="center"><img src="image/lw_kikangais.gif" name="2_6" border="0" alt="予約不可"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td valign="top"><br><br>
+                        <table border="0" cellspacing="0" cellpadding="0" class="tcontent">
+                          <tbody>
+                            <tr>
+                              <td><img src="image/lw_0.gif" align="middle" alt="予約可のマーク"></td>
+                              <td>予約可</td>
+                            </tr>
+                            <tr>
+                              <td><img src="image/lw_kikangais.gif" align="middle" alt="予約不可のマーク"></td>
+                              <td>予約不可</td>
+                            </tr>
+                            <tr>
+                              <td><img src="image/lw_starl.gif" align="middle" alt="選択中のマーク"></td>
+                              <td>選択中</td>
+                            </tr>
+                            <tr>
+                              <td><img src="image/lw_aki2.gif" align="middle" alt="休館日のマーク"></td>
+                              <td>休館日</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td colspan="2">
+                <table border="0">
+                  <tbody>
+                    <tr>
+                      <td><a href="javascript:doTransInstSrchVacantTzoneAction((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchVacantAction, 1, gSrchSelectInstNo, gSrchSelectInstMax);"><img src="image/bw_beforemonth2.gif" alt="前の月" align="middle" border="0"></a></td>
+                      <td><a href="javascript:doTransInstSrchVacantTzoneAction((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchVacantAction, 3, gSrchSelectInstNo, gSrchSelectInstMax);"><img src="image/bw_prevweeks.gif" alt="前の週" align="middle" border="0"></a></td>
+                      <td><a href="javascript:doTransInstSrchVacantTzoneAction((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchVacantAction, 4, gSrchSelectInstNo, gSrchSelectInstMax);"><img src="image/bw_nextweeks.gif" alt="次の週" align="middle" border="0"></a></td>
+                      <td><a href="javascript:doTransInstSrchVacantTzoneAction((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransInstSrchVacantAction, 2, gSrchSelectInstNo, gSrchSelectInstMax);"><img src="image/bw_nextmonth1.gif" alt="次の月" align="middle" border="0"></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <hr>
+              </td>
+              <td>&nbsp;</td>
+            </tr>
+          </tbody>
+        </table>
+        <table border="0">
+          <tbody>
+            <tr>
+              <td><a href="javascript:checkSelect((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWInstTempRsvApplyAction)"><img src="image/bw_applicationreceipt.gif" alt="申込み" border="0"></a></td>
+              <td><a href="javascript:setTimeout(function(){reset((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWInstSrchVacantStopApplyAction)},10);"><img src="image/bw_applicationstop.gif" alt="申込み中止" border="0"></a></td>
+            </tr>
+          </tbody>
+        </table><input type="hidden" name="displayNo" value="prwca1000"><input type="hidden" name="selectItems" value=""><input type="hidden" name="selectName" value=""><input type="hidden" name="transVacantMode" value="7"><input type="hidden" name="srchSelectInstNo" value="0"><input type="hidden" name="selectSize" value="0"><input type="hidden" name="e410300" value="施設を選択して下さい。"><input type="hidden" name="e512060" value="選択情報をリセットしてもよろしいですか？"><input type="hidden" name="checkInstCd" value="44620100"></form>
+    </center>
+    <script type="text/javascript">
+      endTagWrite(this.document);
+    </script>
+  </div><noscript>このページではJavaScriptを使用しています。</noscript></body>
+</html>

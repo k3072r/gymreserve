@@ -1,0 +1,217 @@
+<html lang="ja">
+<head>
+  <link rel="stylesheet" type="text/css" id="csschange" href="prs_color1.css">
+  <link rel="stylesheet" type="text/css" href="prs_change.css">
+  <link rel="stylesheet" type="text/css" href="prs_web_common.css">
+  <script type="text/javascript" src="js/paw_doaction.js"></script>
+  <script type="text/javascript" src="js/paw_common.js"></script>
+  <script type="text/javascript" src="js/paw_errormsg.js"></script>
+  <script type="text/javascript" src="js/prwmn1000.js"></script>
+  <script type="text/javascript" src="js/ajax/jquery.js"></script>
+  <script type="text/javascript" src="js/ajax/jquery.cookie.js"></script>
+  <script type="text/javascript">
+    var gRsvWInstSrchVacantAction ='/sendai/eweb/rsvWInstSrchVacantAction.do';var gRsvWInstSrchMonthVacantAction ='/sendai/eweb/rsvWInstSrchMonthVacantAction.do';var gRsvWUserAttestationPageMoveAction ='/sendai/eweb/rsvWUserAttestationPageMoveAction.do';var gRsvWTransGuideAction ='/sendai/eweb/rsvWTransGuideAction.do';var gRsvWInstSrchMonthVacantBackAction ='/sendai/eweb/rsvWInstSrchMonthVacantBackAction.do';var gRsvWTransUserAttestationEndAction ='/sendai/eweb/rsvWTransUserAttestationEndAction.do';var gSrchSelectInstNo = 5;var gSrchSelectInstMax = 6;
+  </script>
+  <!-- pawzz1000 -->
+  <meta http-equiv="Content-Type" content="text/html;charset=Shift_JIS">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="expires" content="Sun, 10 Jan 1990 01:01:01 GMT">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta name="format-detection" content="telephone=no">
+  <title>仙台市市民利用施設予約システム&nbsp;施設空き状況１ヶ月表示画面</title>
+</head>
+<body class="nomargin" onload="javascript:msgHide();javascript:errorMsg('', 0);startInitTimer()">
+  <script type="text/javascript">
+    loadMsgWrite(this.document);
+  </script>
+  <div id="loadmsg" style="position: absolute; top: 0px; left: 0px; right: 0px; width: 100%; visibility: hidden;">
+    <center><br><br><br><br><br><br><br><br><br><br><img src="image/bi_nowloading.gif" alt="loading"></center>
+  </div>
+  <div id="disp" style="visibility: inherit;">
+    <center>
+      <form name="form1" method="post" action="dummy" autocomplete="off">
+        <table width="100%" class="head2" border="0">
+          <tbody>
+            <tr>
+              <td align="left">
+                <div class="dcontent"><strong>仙台市</strong>利用者東北大学バレーボールクラブ様<a href="#main"><img src="image/1px.gif" border="0" alt="本文へスキップ"></a><a href="#main2"><img src="image/1px.gif" border="0" alt="空き状況の表へスキップ"></a></div>
+              </td>
+              <td align="right">
+                <script type="text/javascript" src="js/paw_fontsize.js"></script>
+                <script type="text/javascript">
+                  var gSmallSize = '90%';var gMiddleSize = '100%';var gLargeSize = '110%';
+                </script>
+                <div style="width:177px;">
+                  <ul id="fontChange" style="margin:0 0 0 0;padding:0">
+                    <li id="li-label1"><img src="image/lw_fontchange1.gif" id="label1" alt="文字サイズ変更"></li>
+                    <li id="small"><a href="javascript:void(0);" title="文字を小サイズに変更" style="margin:0 0 0 0;padding:0" class="afont">小</a></li>
+                    <li id="middle"><a href="javascript:void(0);" title="文字を中サイズに変更" style="margin:0 0 0 0;padding:0" class="afont">中</a></li>
+                    <li id="large"><a href="javascript:void(0);" title="文字を大サイズに変更" style="margin:0 0 0 0;padding:0" class="afont">大</a></li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td align="right" colspan="2">
+                <table border="0">
+                  <tbody>
+                    <tr>
+                      <td><a href="javascript:doAction((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWUserAttestationPageMoveAction);"><img src="image/bw_menu.gif" alt="メニューへ" border="0"></a></td>
+                      <td><a href="javascript:doAction((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWInstSrchMonthVacantBackAction);"><img src="image/bw_return.gif" alt="もどる" border="0"></a></td>
+                      <td><a href="javascript:doAction((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransUserAttestationEndAction);"><img src="image/bw_end.gif" alt="終了" border="0"></a></td>
+                      <td><a href="javascript:doAction((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWTransGuideAction);"><img src="image/bw_guide.gif" alt="案内" border="0"></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" colspan="2">
+                <table border="0" class="head">
+                  <tbody>
+                    <tr>
+                      <td><img src="image/1px.gif" border="0" alt="ここからパンくずリスト">地域</td>
+                      <td>＞</td>
+                      <td>館</td>
+                      <td>＞</td>
+                      <td>施設</td>
+                      <td>＞</td>
+                      <td><img src="image/1px.gif" border="0" alt="現在位置"><strong>一ヶ月検索結果</strong></td>
+                      <td>＞</td>
+                      <td>一週間検索結果</td>
+                      <td>＞</td>
+                      <td>内容確認</td>
+                      <td>＞</td>
+                      <td>予約完了<img src="image/1px.gif" border="0" alt="パンくずリストここまで"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p align="left" class="pcontent"><a name="main"><img src="image/1px.gif" border="0" alt="ここから本文です"></a><br>施設の空き状況です。一ヶ月の空き状況が確認できます。</p><br>
+        <table border="0">
+          <tbody>
+            <tr>
+              <td colspan="3" align="center">
+                <table cellspacing="5" cellpadding="0" border="0" class="tcontent">
+                  <tbody>
+                    <tr>
+                      <td align="right" nowrap="">福室市民センター<br>和室（２）</td>
+                      <td width="99"><a href="javascript:selectInst((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWInstSrchMonthVacantAction, 4)"><img src="image/bw_previnstitutionl.gif" border="0" alt="前の施設"></a></td>
+                      <td>&nbsp;</td>
+                      <td width="99"><img src="image/bw_nextinvalidinstitutionl.gif" border="0" alt=""></td>
+                      <td width="140"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td><a name="main2"><img src="image/1px.gif" border="0" alt="ここから空き状況の表です"></a></td>
+              <td valign="top">
+                <table class="m_akitablelist">
+                  <caption><a href="http://www.hm-sendai.jp/siminc/sisetu/miyagino10.html" target="new_window">福室市民センター</a>調理実習室&nbsp;空き状況</caption>
+                  <tbody>
+                    <tr class="m_akitablelist">
+                      <td colspan="7" nowrap="" class="m_akitablelist"><a href="javascript:moveCalender((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWInstSrchMonthVacantAction, 20230301)"><img src="image/bw_beforemonth2.gif" border="0" align="middle" alt="前の月"></a><strong>2023年4月</strong><a href="javascript:moveCalender((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWInstSrchMonthVacantAction, 20230501)"><img src="image/bw_nextmonth1.gif" border="0" align="middle" alt="次の月"></a></td>
+                    </tr>
+                    <tr class="m_akitablelist">
+                      <th class="m_akitablelist_sun">日曜日</th>
+                      <th class="m_akitablelist">月曜日</th>
+                      <th class="m_akitablelist">火曜日</th>
+                      <th class="m_akitablelist">水曜日</th>
+                      <th class="m_akitablelist">木曜日</th>
+                      <th class="m_akitablelist">金曜日</th>
+                      <th class="m_akitablelist">土曜日</th>
+                    </tr>
+                    <tr>
+                      <td class="m_akitablelist_sun" width="88">&nbsp;</td>
+                      <td class="m_akitablelist_mon" width="88">&nbsp;</td>
+                      <td class="m_akitablelist_tue" width="88">&nbsp;</td>
+                      <td class="m_akitablelist_wed" width="88">&nbsp;</td>
+                      <td class="m_akitablelist_thu" width="88">&nbsp;</td>
+                      <td class="m_akitablelist_fri" width="88">&nbsp;</td>
+                      <td class="m_akitablelist_sat" width="88"><strong>1日</strong><br><img src="image/bw_cal200.gif" border="0" align="middle" alt="予約不可"></td>
+                    </tr>
+                    <tr>
+                      <td class="m_akitablelist_sun" width="88"><strong>2日</strong><br><img src="image/bw_cal200.gif" border="0" align="middle" alt="予約不可"></td>
+                      <td class="m_akitablelist_mon" width="88"><strong>3日</strong><br><img src="image/bw_cal200.gif" border="0" align="middle" alt="予約不可"></td>
+                      <td class="m_akitablelist_tue" width="88"><strong>4日</strong><br><img src="image/bw_cal200.gif" border="0" align="middle" alt="予約不可"></td>
+                      <td class="m_akitablelist_wed" width="88"><strong>5日</strong><br><img src="image/bw_cal200.gif" border="0" align="middle" alt="予約不可"></td>
+                      <td class="m_akitablelist_thu" width="88"><strong>6日</strong><br><img src="image/bw_cal200.gif" border="0" align="middle" alt="予約不可"></td>
+                      <td class="m_akitablelist_fri" width="88"><strong>7日</strong><br><img src="image/bw_cal200.gif" border="0" align="middle" alt="予約不可"></td>
+                      <td class="m_akitablelist_sat" width="88"><strong>8日</strong><br><img src="image/bw_cal200.gif" border="0" align="middle" alt="予約不可"></td>
+                    </tr>
+                    <tr>
+                      <td class="m_akitablelist_sun" width="88"><strong>9日</strong><br><img src="image/bw_cal200.gif" border="0" align="middle" alt="予約不可"></td>
+                      <td class="m_akitablelist_mon" width="88"><strong>10日</strong><br><img src="image/bw_cal200.gif" border="0" align="middle" alt="予約不可"></td>
+                      <td class="m_akitablelist_tue" width="88"><strong>11日</strong><br><img src="image/bw_cal200.gif" border="0" align="middle" alt="予約不可"></td>
+                      <td class="m_akitablelist_wed" width="88"><strong>12日</strong><br><img src="image/bw_cal200.gif" border="0" align="middle" alt="予約不可"></td>
+                      <td class="m_akitablelist_thu" width="88"><strong>13日</strong><br><img src="image/bw_cal200.gif" border="0" align="middle" alt="予約不可"></td>
+                      <td class="m_akitablelist_fri" width="88"><strong>14日</strong><br><img src="image/bw_cal200.gif" border="0" align="middle" alt="予約不可"></td>
+                      <td class="m_akitablelist_sat" width="88"><strong>15日</strong><br><img src="image/bw_cal200.gif" border="0" align="middle" alt="予約不可"></td>
+                    </tr>
+                    <tr>
+                      <td class="m_akitablelist_sun" width="88"><strong>16日</strong><br><img src="image/bw_cal200.gif" border="0" align="middle" alt="予約不可"></td>
+                      <td class="m_akitablelist_mon" width="88"><strong>17日</strong><br><img src="image/bw_cal200.gif" border="0" align="middle" alt="予約不可"></td>
+                      <td class="m_akitablelist_tue" width="88"><strong>18日</strong><br><img src="image/bw_cal200.gif" border="0" align="middle" alt="予約不可"></td>
+                      <td class="m_akitablelist_wed" width="88"><strong>19日</strong><br><img src="image/bw_cal200.gif" border="0" align="middle" alt="予約不可"></td>
+                      <td class="m_akitablelist_thu" width="88"><strong>20日</strong><br><img src="image/bw_cal200.gif" border="0" align="middle" alt="予約不可"></td>
+                      <td class="m_akitablelist_fri" width="88"><strong>21日</strong><br><img src="image/bw_cal200.gif" border="0" align="middle" alt="予約不可"></td>
+                      <td class="m_akitablelist_sat" width="88"><strong>22日</strong><br><img src="image/bw_cal200.gif" border="0" align="middle" alt="予約不可"></td>
+                    </tr>
+                    <tr>
+                      <td class="m_akitablelist_sun" width="88"><strong>23日</strong><br><img src="image/bw_cal200.gif" border="0" align="middle" alt="予約不可"></td>
+                      <td class="m_akitablelist_mon" width="88"><strong>24日</strong><br><img src="image/bw_cal200.gif" border="0" align="middle" alt="予約不可"></td>
+                      <td class="m_akitablelist_tue" width="88"><strong>25日</strong><br><img src="image/bw_cal200.gif" border="0" align="middle" alt="予約不可"></td>
+                      <td class="m_akitablelist_wed" width="88"><strong>26日</strong><br><a href="javascript:selectDay((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWInstSrchVacantAction, 1, 2023, 4, 26)"><img src="image/bw_cal0.gif" border="0" align="middle" alt="全て予約可"></a></td>
+                      <td class="m_akitablelist_thu" width="88"><strong>27日</strong><br><a href="javascript:selectDay((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWInstSrchVacantAction, 1, 2023, 4, 27)"><img src="image/bw_cal0.gif" border="0" align="middle" alt="全て予約可"></a></td>
+                      <td class="m_akitablelist_fri" width="88"><strong>28日</strong><br><a href="javascript:selectDay((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWInstSrchVacantAction, 1, 2023, 4, 28)"><img src="image/bw_cal0.gif" border="0" align="middle" alt="全て予約可"></a></td>
+                      <td class="m_akitablelist_sat" width="88"><strong>29日</strong><br><a href="javascript:selectDay((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWInstSrchVacantAction, 1, 2023, 4, 29)"><img src="image/bw_cal0.gif" border="0" align="middle" alt="全て予約可"></a></td>
+                    </tr>
+                    <tr>
+                      <td class="m_akitablelist_sun" width="88"><strong>30日</strong><br><a href="javascript:selectDay((_dom == 3) ? document.layers['disp'].document.form1 : document.form1, gRsvWInstSrchVacantAction, 1, 2023, 4, 30)"><img src="image/bw_cal0.gif" border="0" align="middle" alt="全て予約可"></a></td>
+                      <td class="m_akitablelist_mon" width="88">&nbsp;</td>
+                      <td class="m_akitablelist_tue" width="88">&nbsp;</td>
+                      <td class="m_akitablelist_wed" width="88">&nbsp;</td>
+                      <td class="m_akitablelist_thu" width="88">&nbsp;</td>
+                      <td class="m_akitablelist_fri" width="88">&nbsp;</td>
+                      <td class="m_akitablelist_sat" width="88">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td align="left" valign="top"><br><br>
+                <table border="0" cellspacing="0" cellpadding="0" class="tcontent">
+                  <tbody>
+                    <tr>
+                      <td><img src="image/bw_cal0.gif" align="middle" alt="全て予約可のマーク"></td>
+                      <td>全て予約可</td>
+                    </tr>
+                    <tr>
+                      <td><img src="image/bw_cal100.gif" align="middle" alt="一部予約可のマーク"></td>
+                      <td>一部予約可</td>
+                    </tr>
+                    <tr>
+                      <td><img src="image/bw_cal200.gif" align="middle" alt="予約不可のマーク"></td>
+                      <td>予約不可</td>
+                    </tr>
+                    <tr>
+                      <td><img src="image/bw_cal2.gif" align="middle" alt="休館日のマーク"></td>
+                      <td>休館日</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table><input type="hidden" name="displayNo" value="prwmn1000"><input type="hidden" name="dispYY" value="2023"><input type="hidden" name="dispMM" value="4"><input type="hidden" name="dispDD" value="1"><input type="hidden" name="selectYY" value="2023"><input type="hidden" name="selectMM" value="4"><input type="hidden" name="selectDD" value="1"><input type="hidden" name="srchSelectYMD" value="20230401"><input type="hidden" name="srchSelectInstNo" value="5"><input type="hidden" name="transVacantMode" value="0"></form>
+    </center>
+    <script type="text/javascript">
+      endTagWrite(this.document);
+    </script>
+  </div><noscript>このページではJavaScriptを使用しています。</noscript></body>
+</html>
