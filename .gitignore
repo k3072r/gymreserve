@@ -1,0 +1,9 @@
+build/
+dist/
+vap_gym_env/
+vap_gymreserve/
+
+*.zip
+*.spec
+
+.DS_Store

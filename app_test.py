@@ -27,6 +27,8 @@ def reserve_main(ward, place, place_detail):
     driver.get('https://www.cm2.epss.jp/sendai/eweb/index.jsp')
     wait.until(EC.presence_of_element_located((By.NAME, 'userId')))
 
+    wait.until(EC.presence_of_element_located((By.XPATH, "//img[@alt='hogehoge']")))
+
     # ユーザ名とパスワードの入力欄を見つける
     username_input = driver.find_element(By.NAME, 'userId')
     password_input = driver.find_element(By.NAME, 'password')
@@ -273,23 +275,25 @@ def reserve_main(ward, place, place_detail):
 
 def main():
 
-    process1 = multiprocessing.Process(target=reserve_main, args=('若林区', '六郷市民センター', '体育館'))
-    process2 = multiprocessing.Process(target=reserve_main, args=('太白区', '生出市民センター', '体育館'))
-    process3 = multiprocessing.Process(target=reserve_main, args=('宮城野区', '東部市民センター', '体育館'))
-    process4 = multiprocessing.Process(target=reserve_main, args=('太白区', '茂庭台市民センター', '体育館'))
-    process5 = multiprocessing.Process(target=reserve_main, args=('宮城野区', '榴ケ岡市民センター', '体育館'))
+    reserve_main('若林区', '六郷市民センター', '体育館')
 
-    process1.start()
-    process2.start()
-    process3.start()
-    process4.start()
-    process5.start()
+    # process1 = multiprocessing.Process(target=reserve_main, args=('若林区', '六郷市民センター', '体育館'))
+    # process2 = multiprocessing.Process(target=reserve_main, args=('太白区', '生出市民センター', '体育館'))
+    # process3 = multiprocessing.Process(target=reserve_main, args=('宮城野区', '東部市民センター', '体育館'))
+    # process4 = multiprocessing.Process(target=reserve_main, args=('太白区', '茂庭台市民センター', '体育館'))
+    # process5 = multiprocessing.Process(target=reserve_main, args=('宮城野区', '榴ケ岡市民センター', '体育館'))
 
-    process1.join()
-    process2.join()
-    process3.join()
-    process4.join()
-    process5.join()
+    # process1.start()
+    # process2.start()
+    # process3.start()
+    # process4.start()
+    # process5.start()
+
+    # process1.join()
+    # process2.join()
+    # process3.join()
+    # process4.join()
+    # process5.join()
 
 
 
