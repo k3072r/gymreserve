@@ -104,18 +104,17 @@ def reserve_main(ward, place, place_detail):
     # 「全て予約可」か「一部予約可」の日付を取得
     driver.implicitly_wait(implicitly_wait_time)    # ここでは要素がない場合もあるのでimplicitly_wait
     available_dates = driver.find_elements(By.XPATH, "//img[@alt='全て予約可' or @alt='一部予約可']")
-    available_num = len(available_dates)
 
-    while available_num > 0:
+    for i in range(len(available_dates), 0, -1):
         # 「全て予約可」か「一部予約可」の日付をクリック
         try:
-            click_img = available_dates[0]
+            available_dates = driver.find_elements(By.XPATH, "//img[@alt='全て予約可' or @alt='一部予約可']")
+            click_img = available_dates[i - 1]
             click_button = click_img.find_element(By.XPATH, "..")
             click_button.click()
         except common.exceptions.NoSuchElementException:    # なんでこの例外処理いれたのか覚えてない。不要に見えるが一応残しておく。
-            # 「全て予約可」か「一部予約可」の日付を再取得しループをやり直す
-            available_dates = driver.find_elements(By.XPATH, "//img[@alt='全て予約可' or @alt='一部予約可']")
-            available_num = len(available_dates)
+            continue
+        except IndexError:
             continue
 
         ## 当該日付の夜間コマが空いているか：該当するimgタグのalt属性より取得
@@ -277,10 +276,6 @@ def reserve_main(ward, place, place_detail):
 
         driver.implicitly_wait(implicitly_wait_time)
 
-        # 「全て予約可」か「一部予約可」の日付を取得
-        available_dates = driver.find_elements(By.XPATH, "//img[@alt='全て予約可' or @alt='一部予約可']")
-        available_num = len(available_dates)
-
     print(place + ' 全部埋まった')
 
     # ブラウザを終了する
@@ -303,6 +298,7 @@ if __name__ == '__main__':
     process4 = multiprocessing.Process(target=reserve_main, args=('青葉区', '福沢市民センター', '体育館'))
     process5 = multiprocessing.Process(target=reserve_main, args=('青葉区', '片平市民センター', '体育館'))
     process6 = multiprocessing.Process(target=reserve_main, args=('若林区', '荒町市民センター', '体育館'))
+    # process7 = multiprocessing.Process(target=reserve_main, args=('太白区', '生出市民センター', '体育館')) # テスト用のプロセス
 
     process1.start()
     process2.start()
@@ -310,6 +306,7 @@ if __name__ == '__main__':
     process4.start()
     process5.start()
     process6.start()
+    # process7.start()
 
     process1.join()
     process2.join()
@@ -317,6 +314,7 @@ if __name__ == '__main__':
     process4.join()
     process5.join()
     process6.join()
+    # process7.join()
 
 
     # target_hour = 9
